@@ -24,11 +24,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          # 尝试 ci，失败再退回 install
-          npm ci --legacy-peer-deps || npm install --legacy-peer-deps || echo "Some packages failed, continue anyway"
+          npm ci --legacy-peer-deps || npm install --legacy-peer-deps || echo "Some packages failed"
 
       - name: Update hot rank data
-        run: npm run update || echo "Update step failed but continue"
+        run: npm run update || echo "Update step failed"
 
       - name: Commit updated data
         run: |
