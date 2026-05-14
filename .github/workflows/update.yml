@@ -1,11 +1,9 @@
-name: Update Hot Rank Data and Deploy
+name: Update hot rank data and deploy
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
   schedule:
-    - cron: '0 */1 * * *'
+    - cron: "0 * * * *"  # 每小时运行一次，可按需修改
 
 jobs:
   update-and-deploy:
@@ -25,14 +23,10 @@ jobs:
       - name: Run update script
         run: node scripts/update.js
 
-      - name: Upload public folder
-        uses: actions/upload-artifact@v4
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          name: hot-rank-public
-          path: public/
+          path: ./public
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
-        with:
-          branch: gh-pages
-          folder: public
