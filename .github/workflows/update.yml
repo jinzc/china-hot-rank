@@ -5,39 +5,32 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 */1 * * *' # 每小时运行一次
+    - cron: '0 */1 * * *'
 
 jobs:
   update-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      # 拉取代码
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 安装 Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
 
-      # 安装依赖
       - name: Install dependencies
         run: npm ci
 
-      # 执行更新脚本
       - name: Run update script
         run: node scripts/update.js
 
-      # 上传 public 目录到 artifact（保留文件备份）
       - name: Upload public folder
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: hot-rank-public
           path: public/
 
-      # 部署到 GitHub Pages
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
         with:
