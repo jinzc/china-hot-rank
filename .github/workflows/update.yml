@@ -3,7 +3,7 @@ name: Update hot rank data and deploy
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 23,0-15 * * *'  # UTC 对应北京时间 7:00-23:00 每小时
+    - cron: '0 23,0-15 * * *'  # UTC，对应北京时间 7:00-23:00 每小时
 
 permissions:
   contents: write
@@ -23,19 +23,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2️⃣ 安装系统依赖 (canvas 必要库)
+      # 2️⃣ 安装系统依赖（canvas 必需库）
       - name: Install system dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++
 
-      # 3️⃣ 设置 Node.js
+      # 3️⃣ 安装 Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      # 4️⃣ 安装 Node 依赖
+      # 4️⃣ 安装 Node 项目依赖
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
@@ -43,7 +43,7 @@ jobs:
       - name: Update hot rank data
         run: npm run update
 
-      # 6️⃣ 提交更新数据
+      # 6️⃣ 自动 commit + push 更新的榜单数据
       - name: Commit updated data
         run: |
           git config user.name "github-actions"
@@ -52,7 +52,7 @@ jobs:
           git commit -m "chore: update hot rank data" || echo "No changes to commit"
           git push
 
-      # 7️⃣ 设置 Pages
+      # 7️⃣ 配置 GitHub Pages
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
