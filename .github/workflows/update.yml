@@ -1,54 +1,32 @@
-name: Update hot rank data and deploy
+name: Update hot rank data
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 23,0-15 * * *'
-
-permissions:
-  contents: write
-  pages: write
-  id-token: write
+    - cron: '0 * * * *'
 
 jobs:
   update-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Install system dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 18
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: npm ci
 
-      - name: Update hot rank data
-        run: npm run update
-
-      - name: Commit updated data
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git add public/data public/share.png
-          git commit -m "chore: update hot rank data" || echo "No changes to commit"
-          git push
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+      - name: Run update script
+        run: node scripts/update.js
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v2
         with:
-          path: public
+          path: ./public
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v1
