@@ -1,0 +1,1176 @@
+{
+  "meta": {
+    "title": "国内热点实时榜",
+    "updatedAt": "2026-05-14 14:41:05",
+    "updateDate": "2026-05-14",
+    "updateHour": "14",
+    "updateMode": "hourly",
+    "timezone": "Asia/Shanghai",
+    "platforms": [
+      {
+        "key": "weibo",
+        "name": "微博",
+        "weight": 1.2
+      },
+      {
+        "key": "douyin",
+        "name": "抖音",
+        "weight": 1.2
+      },
+      {
+        "key": "baidu",
+        "name": "百度",
+        "weight": 1
+      },
+      {
+        "key": "bilibili",
+        "name": "B站",
+        "weight": 0.9
+      },
+      {
+        "key": "zhihu",
+        "name": "知乎",
+        "weight": 0.8
+      }
+    ],
+    "categories": [
+      "民生",
+      "娱乐",
+      "财经",
+      "视频",
+      "科技",
+      "综合",
+      "体育",
+      "知识"
+    ]
+  },
+  "topics": [
+    {
+      "id": "topic-1-c1ifay",
+      "title": "多地发布高温天气提醒",
+      "category": "民生",
+      "score": 148.5,
+      "platforms": [
+        {
+          "key": "weibo",
+          "name": "微博",
+          "rank": 1,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "weibo-1-c1ifay",
+          "title": "多地发布高温天气提醒",
+          "platform": "weibo",
+          "platformName": "微博",
+          "platformRank": 1,
+          "platformScoreRaw": 10000,
+          "url": "#",
+          "category": "民生",
+          "fetchedAt": "2026-05-14 14:41:05",
+          "fallback": true,
+          "platformNormalizedScore": 100
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "id": "topic-6-8xo2dr",
+      "title": "夏日旅行目的地走红",
+      "category": "娱乐",
+      "score": 148.5,
+      "platforms": [
+        {
+          "key": "douyin",
+          "name": "抖音",
+          "rank": 1,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "douyin-1-8xo2dr",
+          "title": "夏日旅行目的地走红",
+          "platform": "douyin",
+          "platformName": "抖音",
+          "platformRank": 1,
+          "platformScoreRaw": 10000,
+          "url": "#",
+          "category": "娱乐",
+          "fetchedAt": "2026-05-14 14:41:05",
+          "fallback": true,
+          "platformNormalizedScore": 100
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "id": "topic-11-h79d44",
+      "title": "全国多地天气变化明显",
+      "category": "民生",
+      "score": 128.5,
+      "platforms": [
+        {
+          "key": "baidu",
+          "name": "百度",
+          "rank": 1,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "baidu-1-h79d44",
+          "title": "全国多地天气变化明显",
+          "platform": "baidu",
+          "platformName": "百度",
+          "platformRank": 1,
+          "platformScoreRaw": 10000,
+          "url": "#",
+          "category": "民生",
+          "fetchedAt": "2026-05-14 14:41:05",
+          "fallback": true,
+          "platformNormalizedScore": 100
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "id": "topic-2-w7qcsi",
+      "title": "热门电影票房持续走高",
+      "category": "娱乐",
+      "score": 127.8,
+      "platforms": [
+        {
+          "key": "weibo",
+          "name": "微博",
+          "rank": 2,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "weibo-2-w7qcsi",
+          "title": "热门电影票房持续走高",
+          "platform": "weibo",
+          "platformName": "微博",
+          "platformRank": 2,
+          "platformScoreRaw": 9000,
+          "url": "#",
+          "category": "娱乐",
+          "fetchedAt": "2026-05-14 14:41:05",
+          "fallback": true,
+          "platformNormalizedScore": 84
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "id": "topic-7-ekqlhp",
+      "title": "年轻人开始反向消费",
+      "category": "财经",
+      "score": 127.8,
+      "platforms": [
+        {
+          "key": "douyin",
+          "name": "抖音",
+          "rank": 2,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "douyin-2-ekqlhp",
+          "title": "年轻人开始反向消费",
+          "platform": "douyin",
+          "platformName": "抖音",
+          "platformRank": 2,
+          "platformScoreRaw": 9000,
+          "url": "#",
+          "category": "财经",
+          "fetchedAt": "2026-05-14 14:41:05",
+          "fallback": true,
+          "platformNormalizedScore": 84
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "id": "topic-16-ue471u",
+      "title": "国产动画新番热度上涨",
+      "category": "视频",
+      "score": 118.5,
+      "platforms": [
+        {
+          "key": "bilibili",
+          "name": "B站",
+          "rank": 1,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "bilibili-1-ue471u",
+          "title": "国产动画新番热度上涨",
+          "platform": "bilibili",
+          "platformName": "B站",
+          "platformRank": 1,
+          "platformScoreRaw": 10000,
+          "url": "#",
+          "category": "视频",
+          "fetchedAt": "2026-05-14 14:41:10",
+          "fallback": true,
+          "platformNormalizedScore": 100
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "id": "topic-12-71bhc3",
+      "title": "高考志愿填报指南",
+      "category": "民生",
+      "score": 111,
+      "platforms": [
+        {
+          "key": "baidu",
+          "name": "百度",
+          "rank": 2,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "baidu-2-71bhc3",
+          "title": "高考志愿填报指南",
+          "platform": "baidu",
+          "platformName": "百度",
+          "platformRank": 2,
+          "platformScoreRaw": 9000,
+          "url": "#",
+          "category": "民生",
+          "fetchedAt": "2026-05-14 14:41:05",
+          "fallback": true,
+          "platformNormalizedScore": 84
+        }
+      ],
+      "rank": 7
+    },
+    {
+      "id": "topic-21-2t0747",
+      "title": "如何看待近期AI产品更新",
+      "category": "科技",
+      "score": 108.5,
+      "platforms": [
+        {
+          "key": "zhihu",
+          "name": "知乎",
+          "rank": 1,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "zhihu-1-2t0747",
+          "title": "如何看待近期AI产品更新",
+          "platform": "zhihu",
+          "platformName": "知乎",
+          "platformRank": 1,
+          "platformScoreRaw": 10000,
+          "url": "#",
+          "category": "科技",
+          "fetchedAt": "2026-05-14 14:41:10",
+          "fallback": true,
+          "platformNormalizedScore": 100
+        }
+      ],
+      "rank": 8
+    },
+    {
+      "id": "topic-3-ouh90g",
+      "title": "AI应用进入集中发布期",
+      "category": "科技",
+      "score": 107.1,
+      "platforms": [
+        {
+          "key": "weibo",
+          "name": "微博",
+          "rank": 3,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "weibo-3-ouh90g",
+          "title": "AI应用进入集中发布期",
+          "platform": "weibo",
+          "platformName": "微博",
+          "platformRank": 3,
+          "platformScoreRaw": 8000,
+          "url": "#",
+          "category": "科技",
+          "fetchedAt": "2026-05-14 14:41:05",
+          "fallback": true,
+          "platformNormalizedScore": 68
+        }
+      ],
+      "rank": 9
+    },
+    {
+      "id": "topic-8-um6wbk",
+      "title": "热门歌曲挑战刷屏",
+      "category": "娱乐",
+      "score": 107.1,
+      "platforms": [
+        {
+          "key": "douyin",
+          "name": "抖音",
+          "rank": 3,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "douyin-3-um6wbk",
+          "title": "热门歌曲挑战刷屏",
+          "platform": "douyin",
+          "platformName": "抖音",
+          "platformRank": 3,
+          "platformScoreRaw": 8000,
+          "url": "#",
+          "category": "娱乐",
+          "fetchedAt": "2026-05-14 14:41:05",
+          "fallback": true,
+          "platformNormalizedScore": 68
+        }
+      ],
+      "rank": 10
+    },
+    {
+      "id": "topic-17-y0qwaz",
+      "title": "AI视频创作教程爆火",
+      "category": "科技",
+      "score": 102.6,
+      "platforms": [
+        {
+          "key": "bilibili",
+          "name": "B站",
+          "rank": 2,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "bilibili-2-y0qwaz",
+          "title": "AI视频创作教程爆火",
+          "platform": "bilibili",
+          "platformName": "B站",
+          "platformRank": 2,
+          "platformScoreRaw": 9000,
+          "url": "#",
+          "category": "科技",
+          "fetchedAt": "2026-05-14 14:41:10",
+          "fallback": true,
+          "platformNormalizedScore": 84
+        }
+      ],
+      "rank": 11
+    },
+    {
+      "id": "topic-22-bu4jii",
+      "title": "年轻人为什么爱上县城旅游",
+      "category": "民生",
+      "score": 94.2,
+      "platforms": [
+        {
+          "key": "zhihu",
+          "name": "知乎",
+          "rank": 2,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "zhihu-2-bu4jii",
+          "title": "年轻人为什么爱上县城旅游",
+          "platform": "zhihu",
+          "platformName": "知乎",
+          "platformRank": 2,
+          "platformScoreRaw": 9000,
+          "url": "#",
+          "category": "民生",
+          "fetchedAt": "2026-05-14 14:41:10",
+          "fallback": true,
+          "platformNormalizedScore": 84
+        }
+      ],
+      "rank": 12
+    },
+    {
+      "id": "topic-13-betrvg",
+      "title": "新能源汽车销量增长",
+      "category": "综合",
+      "score": 93.5,
+      "platforms": [
+        {
+          "key": "baidu",
+          "name": "百度",
+          "rank": 3,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "baidu-3-betrvg",
+          "title": "新能源汽车销量增长",
+          "platform": "baidu",
+          "platformName": "百度",
+          "platformRank": 3,
+          "platformScoreRaw": 8000,
+          "url": "#",
+          "category": "综合",
+          "fetchedAt": "2026-05-14 14:41:05",
+          "fallback": true,
+          "platformNormalizedScore": 68
+        }
+      ],
+      "rank": 13
+    },
+    {
+      "id": "topic-18-sokh8v",
+      "title": "游戏赛事决赛回放",
+      "category": "视频",
+      "score": 86.7,
+      "platforms": [
+        {
+          "key": "bilibili",
+          "name": "B站",
+          "rank": 3,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "bilibili-3-sokh8v",
+          "title": "游戏赛事决赛回放",
+          "platform": "bilibili",
+          "platformName": "B站",
+          "platformRank": 3,
+          "platformScoreRaw": 8000,
+          "url": "#",
+          "category": "视频",
+          "fetchedAt": "2026-05-14 14:41:10",
+          "fallback": true,
+          "platformNormalizedScore": 68
+        }
+      ],
+      "rank": 14
+    },
+    {
+      "id": "topic-4-ctawzo",
+      "title": "体育赛事赛后争议话题升温",
+      "category": "综合",
+      "score": 86.4,
+      "platforms": [
+        {
+          "key": "weibo",
+          "name": "微博",
+          "rank": 4,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "weibo-4-ctawzo",
+          "title": "体育赛事赛后争议话题升温",
+          "platform": "weibo",
+          "platformName": "微博",
+          "platformRank": 4,
+          "platformScoreRaw": 7000,
+          "url": "#",
+          "category": "综合",
+          "fetchedAt": "2026-05-14 14:41:05",
+          "fallback": true,
+          "platformNormalizedScore": 52
+        }
+      ],
+      "rank": 15
+    },
+    {
+      "id": "topic-9-xta7v9",
+      "title": "城市夜经济持续升温",
+      "category": "财经",
+      "score": 86.4,
+      "platforms": [
+        {
+          "key": "douyin",
+          "name": "抖音",
+          "rank": 4,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "douyin-4-xta7v9",
+          "title": "城市夜经济持续升温",
+          "platform": "douyin",
+          "platformName": "抖音",
+          "platformRank": 4,
+          "platformScoreRaw": 7000,
+          "url": "#",
+          "category": "财经",
+          "fetchedAt": "2026-05-14 14:41:05",
+          "fallback": true,
+          "platformNormalizedScore": 52
+        }
+      ],
+      "rank": 16
+    },
+    {
+      "id": "topic-23-8ch1o4",
+      "title": "高考专业应该怎么选",
+      "category": "民生",
+      "score": 79.9,
+      "platforms": [
+        {
+          "key": "zhihu",
+          "name": "知乎",
+          "rank": 3,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "zhihu-3-8ch1o4",
+          "title": "高考专业应该怎么选",
+          "platform": "zhihu",
+          "platformName": "知乎",
+          "platformRank": 3,
+          "platformScoreRaw": 8000,
+          "url": "#",
+          "category": "民生",
+          "fetchedAt": "2026-05-14 14:41:10",
+          "fallback": true,
+          "platformNormalizedScore": 68
+        }
+      ],
+      "rank": 17
+    },
+    {
+      "id": "topic-14-qgz5ha",
+      "title": "楼市政策最新调整",
+      "category": "财经",
+      "score": 76,
+      "platforms": [
+        {
+          "key": "baidu",
+          "name": "百度",
+          "rank": 4,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "baidu-4-qgz5ha",
+          "title": "楼市政策最新调整",
+          "platform": "baidu",
+          "platformName": "百度",
+          "platformRank": 4,
+          "platformScoreRaw": 7000,
+          "url": "#",
+          "category": "财经",
+          "fetchedAt": "2026-05-14 14:41:05",
+          "fallback": true,
+          "platformNormalizedScore": 52
+        }
+      ],
+      "rank": 18
+    },
+    {
+      "id": "topic-19-i1h1vo",
+      "title": "数码新品上手体验",
+      "category": "视频",
+      "score": 70.8,
+      "platforms": [
+        {
+          "key": "bilibili",
+          "name": "B站",
+          "rank": 4,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "bilibili-4-i1h1vo",
+          "title": "数码新品上手体验",
+          "platform": "bilibili",
+          "platformName": "B站",
+          "platformRank": 4,
+          "platformScoreRaw": 7000,
+          "url": "#",
+          "category": "视频",
+          "fetchedAt": "2026-05-14 14:41:10",
+          "fallback": true,
+          "platformNormalizedScore": 52
+        }
+      ],
+      "rank": 19
+    },
+    {
+      "id": "topic-5-h6umwl",
+      "title": "高校毕业季就业服务启动",
+      "category": "民生",
+      "score": 65.7,
+      "platforms": [
+        {
+          "key": "weibo",
+          "name": "微博",
+          "rank": 5,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "weibo-5-h6umwl",
+          "title": "高校毕业季就业服务启动",
+          "platform": "weibo",
+          "platformName": "微博",
+          "platformRank": 5,
+          "platformScoreRaw": 6000,
+          "url": "#",
+          "category": "民生",
+          "fetchedAt": "2026-05-14 14:41:05",
+          "fallback": true,
+          "platformNormalizedScore": 36
+        }
+      ],
+      "rank": 20
+    },
+    {
+      "id": "topic-10-hdosr9",
+      "title": "世界杯名场面二创",
+      "category": "体育",
+      "score": 65.7,
+      "platforms": [
+        {
+          "key": "douyin",
+          "name": "抖音",
+          "rank": 5,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "douyin-5-hdosr9",
+          "title": "世界杯名场面二创",
+          "platform": "douyin",
+          "platformName": "抖音",
+          "platformRank": 5,
+          "platformScoreRaw": 6000,
+          "url": "#",
+          "category": "体育",
+          "fetchedAt": "2026-05-14 14:41:05",
+          "fallback": true,
+          "platformNormalizedScore": 36
+        }
+      ],
+      "rank": 21
+    },
+    {
+      "id": "topic-24-ku4mtu",
+      "title": "新能源汽车是否值得买",
+      "category": "知识",
+      "score": 65.6,
+      "platforms": [
+        {
+          "key": "zhihu",
+          "name": "知乎",
+          "rank": 4,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "zhihu-4-ku4mtu",
+          "title": "新能源汽车是否值得买",
+          "platform": "zhihu",
+          "platformName": "知乎",
+          "platformRank": 4,
+          "platformScoreRaw": 7000,
+          "url": "#",
+          "category": "知识",
+          "fetchedAt": "2026-05-14 14:41:10",
+          "fallback": true,
+          "platformNormalizedScore": 52
+        }
+      ],
+      "rank": 22
+    },
+    {
+      "id": "topic-15-nazcat",
+      "title": "端午假期出游热度上升",
+      "category": "民生",
+      "score": 58.5,
+      "platforms": [
+        {
+          "key": "baidu",
+          "name": "百度",
+          "rank": 5,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "baidu-5-nazcat",
+          "title": "端午假期出游热度上升",
+          "platform": "baidu",
+          "platformName": "百度",
+          "platformRank": 5,
+          "platformScoreRaw": 6000,
+          "url": "#",
+          "category": "民生",
+          "fetchedAt": "2026-05-14 14:41:05",
+          "fallback": true,
+          "platformNormalizedScore": 36
+        }
+      ],
+      "rank": 23
+    },
+    {
+      "id": "topic-20-vdej5b",
+      "title": "知识区科普视频出圈",
+      "category": "视频",
+      "score": 54.9,
+      "platforms": [
+        {
+          "key": "bilibili",
+          "name": "B站",
+          "rank": 5,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "bilibili-5-vdej5b",
+          "title": "知识区科普视频出圈",
+          "platform": "bilibili",
+          "platformName": "B站",
+          "platformRank": 5,
+          "platformScoreRaw": 6000,
+          "url": "#",
+          "category": "视频",
+          "fetchedAt": "2026-05-14 14:41:10",
+          "fallback": true,
+          "platformNormalizedScore": 36
+        }
+      ],
+      "rank": 24
+    },
+    {
+      "id": "topic-25-dt0ra1",
+      "title": "职场新人如何提高表达能力",
+      "category": "知识",
+      "score": 51.3,
+      "platforms": [
+        {
+          "key": "zhihu",
+          "name": "知乎",
+          "rank": 5,
+          "url": "#"
+        }
+      ],
+      "sourceCount": 1,
+      "bestUrl": "#",
+      "items": [
+        {
+          "id": "zhihu-5-dt0ra1",
+          "title": "职场新人如何提高表达能力",
+          "platform": "zhihu",
+          "platformName": "知乎",
+          "platformRank": 5,
+          "platformScoreRaw": 6000,
+          "url": "#",
+          "category": "知识",
+          "fetchedAt": "2026-05-14 14:41:10",
+          "fallback": true,
+          "platformNormalizedScore": 36
+        }
+      ],
+      "rank": 25
+    }
+  ],
+  "platformItems": [
+    {
+      "id": "weibo-1-c1ifay",
+      "title": "多地发布高温天气提醒",
+      "platform": "weibo",
+      "platformName": "微博",
+      "platformRank": 1,
+      "platformScoreRaw": 10000,
+      "url": "#",
+      "category": "民生",
+      "fetchedAt": "2026-05-14 14:41:05",
+      "fallback": true,
+      "platformNormalizedScore": 100
+    },
+    {
+      "id": "douyin-1-8xo2dr",
+      "title": "夏日旅行目的地走红",
+      "platform": "douyin",
+      "platformName": "抖音",
+      "platformRank": 1,
+      "platformScoreRaw": 10000,
+      "url": "#",
+      "category": "娱乐",
+      "fetchedAt": "2026-05-14 14:41:05",
+      "fallback": true,
+      "platformNormalizedScore": 100
+    },
+    {
+      "id": "baidu-1-h79d44",
+      "title": "全国多地天气变化明显",
+      "platform": "baidu",
+      "platformName": "百度",
+      "platformRank": 1,
+      "platformScoreRaw": 10000,
+      "url": "#",
+      "category": "民生",
+      "fetchedAt": "2026-05-14 14:41:05",
+      "fallback": true,
+      "platformNormalizedScore": 100
+    },
+    {
+      "id": "bilibili-1-ue471u",
+      "title": "国产动画新番热度上涨",
+      "platform": "bilibili",
+      "platformName": "B站",
+      "platformRank": 1,
+      "platformScoreRaw": 10000,
+      "url": "#",
+      "category": "视频",
+      "fetchedAt": "2026-05-14 14:41:10",
+      "fallback": true,
+      "platformNormalizedScore": 100
+    },
+    {
+      "id": "zhihu-1-2t0747",
+      "title": "如何看待近期AI产品更新",
+      "platform": "zhihu",
+      "platformName": "知乎",
+      "platformRank": 1,
+      "platformScoreRaw": 10000,
+      "url": "#",
+      "category": "科技",
+      "fetchedAt": "2026-05-14 14:41:10",
+      "fallback": true,
+      "platformNormalizedScore": 100
+    },
+    {
+      "id": "weibo-2-w7qcsi",
+      "title": "热门电影票房持续走高",
+      "platform": "weibo",
+      "platformName": "微博",
+      "platformRank": 2,
+      "platformScoreRaw": 9000,
+      "url": "#",
+      "category": "娱乐",
+      "fetchedAt": "2026-05-14 14:41:05",
+      "fallback": true,
+      "platformNormalizedScore": 84
+    },
+    {
+      "id": "douyin-2-ekqlhp",
+      "title": "年轻人开始反向消费",
+      "platform": "douyin",
+      "platformName": "抖音",
+      "platformRank": 2,
+      "platformScoreRaw": 9000,
+      "url": "#",
+      "category": "财经",
+      "fetchedAt": "2026-05-14 14:41:05",
+      "fallback": true,
+      "platformNormalizedScore": 84
+    },
+    {
+      "id": "baidu-2-71bhc3",
+      "title": "高考志愿填报指南",
+      "platform": "baidu",
+      "platformName": "百度",
+      "platformRank": 2,
+      "platformScoreRaw": 9000,
+      "url": "#",
+      "category": "民生",
+      "fetchedAt": "2026-05-14 14:41:05",
+      "fallback": true,
+      "platformNormalizedScore": 84
+    },
+    {
+      "id": "bilibili-2-y0qwaz",
+      "title": "AI视频创作教程爆火",
+      "platform": "bilibili",
+      "platformName": "B站",
+      "platformRank": 2,
+      "platformScoreRaw": 9000,
+      "url": "#",
+      "category": "科技",
+      "fetchedAt": "2026-05-14 14:41:10",
+      "fallback": true,
+      "platformNormalizedScore": 84
+    },
+    {
+      "id": "zhihu-2-bu4jii",
+      "title": "年轻人为什么爱上县城旅游",
+      "platform": "zhihu",
+      "platformName": "知乎",
+      "platformRank": 2,
+      "platformScoreRaw": 9000,
+      "url": "#",
+      "category": "民生",
+      "fetchedAt": "2026-05-14 14:41:10",
+      "fallback": true,
+      "platformNormalizedScore": 84
+    },
+    {
+      "id": "weibo-3-ouh90g",
+      "title": "AI应用进入集中发布期",
+      "platform": "weibo",
+      "platformName": "微博",
+      "platformRank": 3,
+      "platformScoreRaw": 8000,
+      "url": "#",
+      "category": "科技",
+      "fetchedAt": "2026-05-14 14:41:05",
+      "fallback": true,
+      "platformNormalizedScore": 68
+    },
+    {
+      "id": "douyin-3-um6wbk",
+      "title": "热门歌曲挑战刷屏",
+      "platform": "douyin",
+      "platformName": "抖音",
+      "platformRank": 3,
+      "platformScoreRaw": 8000,
+      "url": "#",
+      "category": "娱乐",
+      "fetchedAt": "2026-05-14 14:41:05",
+      "fallback": true,
+      "platformNormalizedScore": 68
+    },
+    {
+      "id": "baidu-3-betrvg",
+      "title": "新能源汽车销量增长",
+      "platform": "baidu",
+      "platformName": "百度",
+      "platformRank": 3,
+      "platformScoreRaw": 8000,
+      "url": "#",
+      "category": "综合",
+      "fetchedAt": "2026-05-14 14:41:05",
+      "fallback": true,
+      "platformNormalizedScore": 68
+    },
+    {
+      "id": "bilibili-3-sokh8v",
+      "title": "游戏赛事决赛回放",
+      "platform": "bilibili",
+      "platformName": "B站",
+      "platformRank": 3,
+      "platformScoreRaw": 8000,
+      "url": "#",
+      "category": "视频",
+      "fetchedAt": "2026-05-14 14:41:10",
+      "fallback": true,
+      "platformNormalizedScore": 68
+    },
+    {
+      "id": "zhihu-3-8ch1o4",
+      "title": "高考专业应该怎么选",
+      "platform": "zhihu",
+      "platformName": "知乎",
+      "platformRank": 3,
+      "platformScoreRaw": 8000,
+      "url": "#",
+      "category": "民生",
+      "fetchedAt": "2026-05-14 14:41:10",
+      "fallback": true,
+      "platformNormalizedScore": 68
+    },
+    {
+      "id": "weibo-4-ctawzo",
+      "title": "体育赛事赛后争议话题升温",
+      "platform": "weibo",
+      "platformName": "微博",
+      "platformRank": 4,
+      "platformScoreRaw": 7000,
+      "url": "#",
+      "category": "综合",
+      "fetchedAt": "2026-05-14 14:41:05",
+      "fallback": true,
+      "platformNormalizedScore": 52
+    },
+    {
+      "id": "douyin-4-xta7v9",
+      "title": "城市夜经济持续升温",
+      "platform": "douyin",
+      "platformName": "抖音",
+      "platformRank": 4,
+      "platformScoreRaw": 7000,
+      "url": "#",
+      "category": "财经",
+      "fetchedAt": "2026-05-14 14:41:05",
+      "fallback": true,
+      "platformNormalizedScore": 52
+    },
+    {
+      "id": "baidu-4-qgz5ha",
+      "title": "楼市政策最新调整",
+      "platform": "baidu",
+      "platformName": "百度",
+      "platformRank": 4,
+      "platformScoreRaw": 7000,
+      "url": "#",
+      "category": "财经",
+      "fetchedAt": "2026-05-14 14:41:05",
+      "fallback": true,
+      "platformNormalizedScore": 52
+    },
+    {
+      "id": "bilibili-4-i1h1vo",
+      "title": "数码新品上手体验",
+      "platform": "bilibili",
+      "platformName": "B站",
+      "platformRank": 4,
+      "platformScoreRaw": 7000,
+      "url": "#",
+      "category": "视频",
+      "fetchedAt": "2026-05-14 14:41:10",
+      "fallback": true,
+      "platformNormalizedScore": 52
+    },
+    {
+      "id": "zhihu-4-ku4mtu",
+      "title": "新能源汽车是否值得买",
+      "platform": "zhihu",
+      "platformName": "知乎",
+      "platformRank": 4,
+      "platformScoreRaw": 7000,
+      "url": "#",
+      "category": "知识",
+      "fetchedAt": "2026-05-14 14:41:10",
+      "fallback": true,
+      "platformNormalizedScore": 52
+    },
+    {
+      "id": "weibo-5-h6umwl",
+      "title": "高校毕业季就业服务启动",
+      "platform": "weibo",
+      "platformName": "微博",
+      "platformRank": 5,
+      "platformScoreRaw": 6000,
+      "url": "#",
+      "category": "民生",
+      "fetchedAt": "2026-05-14 14:41:05",
+      "fallback": true,
+      "platformNormalizedScore": 36
+    },
+    {
+      "id": "douyin-5-hdosr9",
+      "title": "世界杯名场面二创",
+      "platform": "douyin",
+      "platformName": "抖音",
+      "platformRank": 5,
+      "platformScoreRaw": 6000,
+      "url": "#",
+      "category": "体育",
+      "fetchedAt": "2026-05-14 14:41:05",
+      "fallback": true,
+      "platformNormalizedScore": 36
+    },
+    {
+      "id": "baidu-5-nazcat",
+      "title": "端午假期出游热度上升",
+      "platform": "baidu",
+      "platformName": "百度",
+      "platformRank": 5,
+      "platformScoreRaw": 6000,
+      "url": "#",
+      "category": "民生",
+      "fetchedAt": "2026-05-14 14:41:05",
+      "fallback": true,
+      "platformNormalizedScore": 36
+    },
+    {
+      "id": "bilibili-5-vdej5b",
+      "title": "知识区科普视频出圈",
+      "platform": "bilibili",
+      "platformName": "B站",
+      "platformRank": 5,
+      "platformScoreRaw": 6000,
+      "url": "#",
+      "category": "视频",
+      "fetchedAt": "2026-05-14 14:41:10",
+      "fallback": true,
+      "platformNormalizedScore": 36
+    },
+    {
+      "id": "zhihu-5-dt0ra1",
+      "title": "职场新人如何提高表达能力",
+      "platform": "zhihu",
+      "platformName": "知乎",
+      "platformRank": 5,
+      "platformScoreRaw": 6000,
+      "url": "#",
+      "category": "知识",
+      "fetchedAt": "2026-05-14 14:41:10",
+      "fallback": true,
+      "platformNormalizedScore": 36
+    }
+  ]
+}

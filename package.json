@@ -1,0 +1,20 @@
+{
+  "name": "china-hot-rank",
+  "version": "1.0.0",
+  "description": "中国国内多平台实时热点榜单：微博、抖音、百度、B站、知乎等，支持综合榜、平台榜、分类榜、微信分享。",
+  "type": "module",
+  "scripts": {
+    "update": "node scripts/update.js",
+    "serve": "npx http-server public -p 8080 -c-1",
+    "build": "node scripts/update.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.76"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

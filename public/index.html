@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>国内热点实时榜</title>
+  <meta name="description" content="聚合微博、抖音、百度、B站、知乎热榜，支持综合榜、平台榜、分类榜，每小时更新。" />
+  <meta property="og:title" content="国内热点实时榜" />
+  <meta property="og:description" content="聚合微博、抖音、百度、B站、知乎热榜，每小时更新。" />
+  <meta property="og:image" content="./share.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">China Hot Rank</p>
+      <h1>国内热点实时榜</h1>
+      <p class="subtitle">聚合微博、抖音、百度、B站、知乎热榜，支持综合榜、平台榜和分类榜。</p>
+    </div>
+    <div class="meta-card">
+      <div>更新时间</div>
+      <strong id="updatedAt">加载中...</strong>
+      <span id="updateMode">小时更新</span>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="panel controls">
+      <div class="tabs" id="viewTabs">
+        <button class="active" data-view="topic">综合榜</button>
+        <button data-view="platform">按平台</button>
+        <button data-view="category">按分类</button>
+      </div>
+
+      <div class="filter-row" id="platformFilters"></div>
+      <div class="filter-row" id="categoryFilters"></div>
+    </section>
+
+    <section class="stats-grid" id="statsGrid"></section>
+
+    <section class="panel list-panel">
+      <div class="list-head">
+        <h2 id="listTitle">综合热榜</h2>
+        <button id="copyShare">复制分享文案</button>
+      </div>
+      <div id="rankList" class="rank-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>数据仅供趋势观察，请以各平台官方页面为准。建议长期使用时自建 API 数据源。</p>
+  </footer>
+
+  <script src="./assets/app.js" type="module"></script>
+</body>
+</html>
