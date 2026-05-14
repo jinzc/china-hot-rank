@@ -1,39 +1,38 @@
 name: Update Hot Rank Data
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: '0 * * * *'  # 每小时执行一次
+    - cron: '0 * * * *' # 每小时
+  workflow_dispatch:
 
 jobs:
   update-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
       # 1. 拉取仓库
       - name: Checkout repository
-        uses: actions/checkout@v4   # ✅ 最新版本，替换掉 v3
+        uses: actions/checkout@v4
 
       # 2. 设置 Node.js
       - name: Setup Node.js
-        uses: actions/setup-node@v4   # ✅ 最新版本，替换掉 v3
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
 
       # 3. 安装依赖
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: npm ci
 
-      # 4. 执行更新脚本
+      # 4. 运行更新脚本
       - name: Run update script
-        run: node scripts/update.js
+        run: node china-hot-rank/scripts/update.js
 
-      # 5. 上传生成的 public 文件夹
+      # 5. 构建页面 artifact
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1  # ✅ 官方推荐版本
+        uses: actions/upload-pages-artifact@v2
         with:
-          path: ./public
+          path: public
 
       # 6. 部署到 GitHub Pages
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         uses: actions/deploy-pages@v1
