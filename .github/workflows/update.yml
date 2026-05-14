@@ -2,42 +2,48 @@ name: Update hot rank data and deploy
 
 on:
   schedule:
-    - cron: '0 * * * *' # 每小时运行一次
+    - cron: '0 */1 * * *' # 每小时更新一次
   workflow_dispatch:
 
 jobs:
   update-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
+      # 1️⃣ 拉取代码
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      # 2️⃣ 设置 Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: '20'
 
+      # 3️⃣ 安装依赖
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: |
+          npm install --legacy-peer-deps
 
+      # 4️⃣ 更新排行榜数据
       - name: Update hot rank data
         run: npm run update
 
+      # 5️⃣ 提交更新数据
       - name: Commit updated data
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-          git add .
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public
           git commit -m "Update hot rank data" || echo "No changes to commit"
           git push
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Upload artifact
+      # 6️⃣ 打包上传 Pages artifacts (替换已弃用 v3)
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
           path: public
 
+      # 7️⃣ 部署到 GitHub Pages
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
