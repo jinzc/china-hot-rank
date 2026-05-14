@@ -1,9 +1,9 @@
 name: Update hot rank data and deploy
 
 on:
-  schedule:
-    - cron: "0 * * * *"  # 每小时运行一次
   workflow_dispatch:
+  schedule:
+    - cron: '0 */1 * * *' # 每小时执行一次
 
 jobs:
   update-and-deploy:
@@ -16,25 +16,22 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: '20'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Update hot rank data
-        run: npm run update
-
-      - name: Build public
-        run: npm run build # 如果你有 build 步骤
-
-      # 上传 artifact，改为 v1
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./public
+        run: node scripts/update.js
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v4
+
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: public/
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
