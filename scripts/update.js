@@ -1,1 +1,1 @@
-console.log('请替换为你实际的更新脚本');
+console.log('update script');
