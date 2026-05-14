@@ -8,37 +8,55 @@ on:
 jobs:
   update-and-deploy:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
 
     steps:
+      # 1️⃣ 获取代码
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      # 2️⃣ 安装 Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 20
+          cache: 'npm'
 
+      # 3️⃣ 安装依赖
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: |
+          npm ci --legacy-peer-deps || npm install --legacy-peer-deps
 
+      # 4️⃣ 更新热榜数据
       - name: Update hot rank data
         run: npm run update
 
+      # 5️⃣ 提交更新
       - name: Commit updated data
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "Update hot rank data" || echo "No changes to commit"
-          git push
+          git diff-index --quiet HEAD || git commit -m "Update hot rank data"
+          git push || echo "No changes to push"
 
+      # 6️⃣ 配置 Pages
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Upload artifact
+      # 7️⃣ 上传静态文件到 artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
           path: public
 
+      # 8️⃣ 部署到 GitHub Pages
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
+
+      # 9️⃣ 额外提示（可选）
+      - name: Notify success
+        if: success()
+        run: echo "Hot rank updated and deployed successfully!"
